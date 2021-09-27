@@ -1,0 +1,25 @@
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: #73cca8;
+}
+
+.navbar {
+  background-color: rgb(96, 127, 211);
+  border-bottom: 1px rgb(92, 92, 92);
+  box-shadow: 0px 4px 14px rgb(49, 48, 48);
+  height: 6vh;
+}
+
+.selected {
+  border-bottom: 3px solid #73cca8;
+  color: #73cca8;
+}
+.selected a {
+  color: #73cca8;
+  font-weight: 700 !important;
+}
