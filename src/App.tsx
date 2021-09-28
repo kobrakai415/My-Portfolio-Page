@@ -5,16 +5,18 @@ import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router } from 'react-router-dom'
 import Home from './Home/Home';
 import Projects from './components/Projects/Projects';
+import About from './components/About/About';
 
 
-function App(props: IInterface) {
-  const { type, children } = props
+function App() {
+
   return (
     <div className="App">
       <Router>
-          <Navbar />
+        <Navbar />
         <Container >
           <Home />
+          <About />
           <Projects />
         </Container>
       </Router>

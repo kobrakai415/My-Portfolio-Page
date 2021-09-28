@@ -37,7 +37,10 @@
   z-index: 3;
   fill: hotpink;
 }
-.github-logo:hover {
+.github-logo:hover,
+.github-logo2:hover,
+.github-logo3:hover,
+.github-logo4:hover {
   fill: greenyellow;
   cursor: pointer;
 }
@@ -52,11 +55,6 @@
   fill: hotpink;
 }
 
-.github-logo2:hover {
-  fill: greenyellow;
-  cursor: pointer;
-}
-
 .github-logo3 {
   height: 44px;
   width: 44px;
@@ -67,20 +65,17 @@
   z-index: 3;
   fill: hotpink;
 }
-.github-logo3:hover {
-  fill: greenyellow;
-  cursor: pointer;
-}
+
 .github-logo4 {
-    height: 44px;
-    width: 44px;
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    fill: hotpink;
-  }
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  fill: hotpink;
+}
 .demo-logo {
   height: 44px;
   width: 44px;

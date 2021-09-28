@@ -25,7 +25,9 @@ const Projects = () => {
     return (
         <Row id="projects">
 
-            <h3>My Projects</h3>
+            <h3 className="sub-title mb-5">My Projects</h3>
+
+
             <Col xs={12} md={6}>
                 <div className="img-container p-2 m-3">
                     <img className="img-fluid project-img w-100" src="/stockbook.png" alt="stockbook" />
