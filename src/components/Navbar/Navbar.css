@@ -16,10 +16,10 @@
 }
 
 .selected {
-  border-bottom: 3px solid #73cca8;
+  border-bottom: 3px solid greenyellow;
   color: #73cca8;
 }
 .selected a {
-  color: #73cca8;
+  color: greenyellow;
   font-weight: 700 !important;
 }
