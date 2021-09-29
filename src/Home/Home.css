@@ -1,11 +1,14 @@
 .home{
     height: 94vh;
     text-align: center;
+    position: relative;
 }
 .name{
     font-size: 120px;
     font-weight: 100;
+    padding-top: 9rem;
 }
+
 
 p {
     font-size: 24px;

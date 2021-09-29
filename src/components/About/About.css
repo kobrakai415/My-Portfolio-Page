@@ -1,17 +1,26 @@
 #about {
-    margin: 0 auto;
-    width: 32rem;
-    text-align: justify;
+  text-align: justify;
 }
 .sub-title {
-  padding: 4rem 4rem;
+  padding: 2rem 4rem;
   text-align: center;
   position: relative;
   color: #3d83c1;
   font-size: 4rem;
+padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+.sub-title2 {
+  padding: 2rem 4rem;
+  text-align: center;
+  position: relative;
+  color: #3d83c1;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.sub-title::after {
+.sub-title::after,
+.sub-title2::after {
   content: "";
   display: block;
   position: absolute;
