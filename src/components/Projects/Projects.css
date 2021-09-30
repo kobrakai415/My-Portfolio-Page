@@ -1,5 +1,4 @@
 #projects {
-
 }
 .img-container {
   background-color: rgba(122, 121, 121, 0.541);
@@ -93,4 +92,15 @@
 .demo-logo:hover {
   fill: greenyellow;
   cursor: pointer;
+}
+
+@media (max-width: 1317px) {
+  .github-logo,
+  .github-logo2,
+  .github-logo3,
+  .github-logo4,
+  .demo-logo {
+    height: 30px;
+    width: 30px;
+  }
 }

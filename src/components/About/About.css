@@ -8,9 +8,13 @@
   position: absolute;
   left: 0;
   top: 5%;
-  background: transparent;
 }
-
+#about::before {
+  content: url(/src/assets/right-peep.png);
+  position: absolute;
+  right: 0;
+  bottom: -25%;
+}
 .sub-title {
   padding: 2rem 4rem;
   text-align: center;
@@ -48,8 +52,8 @@
   }
 }
 @media (max-width: 833px) {
-  #about::after {
+  #about::after, #about::before {
     z-index: -1;
-    width: 80vw;
+
   }
 }
