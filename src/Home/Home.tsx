@@ -13,7 +13,7 @@ const Home = () => {
                     <div className="text-class">
                         <p className="mb-0 text-center">Welcome to my portfolio.</p>
                         <div className="d-flex justify-content-center">
-                            <img className="img-fluid" src="/me.png" />
+                            <img className="img-fluid" src="/me.png" alt="me" />
                         </div>
                         <p className="py-2 py-md-5">I make full stack web applications and have a background in central government finance, having worked in whitehall for 4 years!</p>
                     </div>
