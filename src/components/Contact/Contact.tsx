@@ -113,9 +113,9 @@ const Contact = () => {
 
 
 
-                {/* <div className="d-flex justify-content-center pt-5 pb-1" >
+                <div className="d-flex justify-content-start pt-5 pb-1" >
                     <img className="img-fluid" src="/me4.png" alt="me" />
-                </div> */}
+                </div>
             </Col>
 
 

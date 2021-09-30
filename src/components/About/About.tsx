@@ -9,7 +9,7 @@ const About = () => {
           
 
             <Col xs={12}>
-                <div className="text-class ">
+                <div className="text-class p-2">
                     
                     <h3 className="sub-title">About</h3>
 

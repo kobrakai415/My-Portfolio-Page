@@ -8,6 +8,7 @@
   position: absolute;
   left: 0;
   top: 5%;
+  background: transparent;
 }
 
 .sub-title {
@@ -43,7 +44,12 @@
 
 @media (max-width: 557px) {
   .sub-title {
-    font-size: 55px
+    font-size: 55px;
   }
-  
+}
+@media (max-width: 833px) {
+  #about::after {
+    z-index: -1;
+    width: 80vw;
+  }
 }
