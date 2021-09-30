@@ -1,20 +1,32 @@
-.home{
-    height: 94vh;
-    text-align: center;
-    position: relative;
+.text-class {
+  text-align: justify;
+  position: relative;
+  width: 28rem;
+  margin: 0 auto;
 }
-.name{
-    font-size: 120px;
-    font-weight: 100;
-    padding-top: 9rem;
+.name {
+  font-size: 120px;
+  font-weight: 100;
+  padding-top: 9rem;
 }
-
 
 p {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 #home img {
-    height: 250px !important;
+  height: 250px !important;
+}
+
+@media (max-width: 766px) {
+  .name {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 30rem) {
+  .text-class  {
+    width: 100%;
+  }
 }

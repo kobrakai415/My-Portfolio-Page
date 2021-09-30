@@ -6,15 +6,11 @@ import './About.css'
 const About = () => {
     return (
         <Row id="about">
-            <Col xs={3} className="ps-0">
-                <div className="pt-3">
-                    <img src="/me2.png" alt="me" />
-                </div>
+          
 
-            </Col>
-            <Col xs={6}>
-                <div className="px-5">
-
+            <Col xs={12}>
+                <div className="text-class ">
+                    
                     <h3 className="sub-title">About</h3>
 
                     <p>

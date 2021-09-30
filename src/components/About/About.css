@@ -1,13 +1,22 @@
 #about {
   text-align: justify;
+  position: relative;
 }
+
+#about::after {
+  content: url(/src/assets/left-peep.png);
+  position: absolute;
+  left: 0;
+  top: 5%;
+}
+
 .sub-title {
   padding: 2rem 4rem;
   text-align: center;
   position: relative;
   color: #3d83c1;
   font-size: 4rem;
-padding-top: 3rem;
+  padding-top: 3rem;
   margin-bottom: 2rem;
 }
 .sub-title2 {
@@ -30,4 +39,11 @@ padding-top: 3rem;
   height: 4px;
   margin-left: -8rem;
   background-color: #3d83c1;
+}
+
+@media (max-width: 557px) {
+  .sub-title {
+    font-size: 55px
+  }
+  
 }

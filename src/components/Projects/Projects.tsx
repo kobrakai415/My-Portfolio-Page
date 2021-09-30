@@ -25,10 +25,9 @@ const Projects = () => {
     return (
         <Row id="projects">
 
-            <h3 className="sub-title mb-5">My Projects</h3>
+            <h3 className="sub-title mb-5">Projects</h3>
 
-
-            <Col xs={12} md={6}>
+            <Col xs={12} xl={6}>
                 <div className="img-container p-2 m-3   ">
                     <img className="img-fluid project-img w-100" src="/stockbook.png" alt="stockbook" />
 
@@ -68,7 +67,7 @@ const Projects = () => {
 
                 </div>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} xl={6}>
                 <div className="img-container p-2 m-3   ">
                     <img className="img-fluid project-img w-100" src="/spotify.png" alt="spotify" />
                     <a href="https://github.com/kobrakai415/strivify" target="_blank" rel="noreferrer">
@@ -95,7 +94,7 @@ const Projects = () => {
                     </a>
                 </div>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} xl={6}>
                 <div className="img-container p-2 m-3   ">
                     <img className="img-fluid project-img w-100" src="/linkedin.png" alt="linkedin" />
                     <a href="https://github.com/kobrakai415/BW2-LinkedIn" target="_blank" rel="noreferrer">
@@ -122,7 +121,7 @@ const Projects = () => {
                     </a>
                 </div>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} xl={6}>
                 <div className="img-container p-2 m-3   ">
                     <img className="img-fluid project-img w-100" src="/netflix.png" alt="netflix" />
                 </div>
