@@ -16,3 +16,8 @@ type IDemo = IInterface & Document
 
 // import { RouteChildrenProps } from "react-router" NO GO in .d.ts
 type IDemoFunction = (text: string, route: import("react-router-dom").RouteChildrenProps) => number
+
+interface IScrollSpy {
+    setLocation: (location: string) => void
+    hrefLoc?: string
+}

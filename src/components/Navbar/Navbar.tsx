@@ -1,39 +1,36 @@
-import { useState } from 'react';
-import './Navbar.css'
+import { useEffect } from "react";
+import { RouteComponentProps, withRouter } from "react-router";
+import './Navbar.css';
 
+const Navbar = (props: IScrollSpy & RouteComponentProps) => {
+    const {hrefLoc, history} = props
 
-const Navbar = () => {
+    const isSelected=(comparator:string)=>{
+        if (hrefLoc === comparator) return "selected"
+        return ""
+    }
 
-    const [selected, setSelected] = useState("home");
+    useEffect(()=>{
+        history.replace(`#${hrefLoc}`)
+    }, [hrefLoc, history])
+    
 
     return (
-        <div className="my-navbar d-flex flex-row justify-content-center">
+        <div id="my-navbar" className="my-navbar d-flex flex-row justify-content-center align-items-center">
 
 
-            <div className="d-flex flex-row " >
-                <div  className={"nav-links py-2  px-1 mx-1 px-md-4 " + (selected === "home" ? "selected" : "")}>
-                    <a onClick={() => setSelected("home")} href="#home"> Home </a>
-                </div>
+         
+                <a href="#home" className={"py-2 px-1 mx-1 px-md-4 " + isSelected("home")} > Home </a>
 
-                <div  className={"nav-links py-2  px-1 mx-1 px-md-4 " + (selected === "about" ? "selected" : "")}>
-                    <a onClick={() => setSelected("about")} href="#about"> About </a>
-                </div>
-                {/* <div onClick={() => setSelected("skills")} className={"nav-links py-2  px-1 mx-1 px-md-4 " + (selected === "skills" ? "selected" : "")}>
-                    <a href="#skills"> Skills </a>
-                </div> */}
-                <div onClick={() => setSelected("projects")} className={"nav-links py-2  px-1 mx-1 px-md-4 " + (selected === "projects" ? "selected" : "")}>
+                <a href="#about" className={" py-2 px-1 mx-1 px-md-4 "+ isSelected("about")} > About </a>
 
-                    <a href="#projects"> Projects </a>
-                </div>
-                <div onClick={() => setSelected("contact")} className={"nav-links py-2  px-1 mx-1 px-md-4 " + (selected === "contact" ? "selected" : "")}>
+                <a href="#projects" className={"py-2 px-1 mx-1 px-md-4 "+ isSelected("projects")} > Projects </a>
 
-                    <a href="#contact"> Contact </a>
-                </div>
+                <a href="#contact" className={"py-2 px-1 mx-1 px-md-4 "+ isSelected("contact")} > Contact </a>
 
-            </div>
 
         </div>
     );
 }
 
-export default Navbar
+export default withRouter(Navbar)

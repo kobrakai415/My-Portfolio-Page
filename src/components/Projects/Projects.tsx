@@ -1,4 +1,5 @@
 import { Col, Row, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import { Waypoint } from 'react-waypoint';
 import './Projects.css'
 
 const FrontendCodeTooltip = (props: any) => (
@@ -18,10 +19,13 @@ const BackendCodeTooltip = (props: any) => (
     </Tooltip>
 );
 
-const Projects = () => {
+const Projects = (props: IScrollSpy) => {
+    const {setLocation} = props
     return (
+        <>
         <Row id="projects" className="p-md-5 m-md-5">
 
+        <Waypoint onEnter={() => setLocation("projects")} />
             <h3 className="sub-title mb-5">Projects</h3>
 
             <Col xs={12} lg={6}>
@@ -124,6 +128,7 @@ const Projects = () => {
                 </div>
             </Col>
         </Row >
+        </>
     );
 }
 

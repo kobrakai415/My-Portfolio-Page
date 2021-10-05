@@ -11,22 +11,23 @@
   padding-bottom: 0.5rem;
   z-index: 30000;
 }
-.nav-links a {
+.my-navbar a {
   text-decoration: none;
   color: black;
 }
 
-.nav-links a:hover, .nav-links:hover a{
+.my-navbar a:hover {
   text-decoration: none;
   color: greenyellow;
   cursor: pointer;
-}
-.nav-links:hover  {
   border-bottom: 3px solid greenyellow;
+
 }
+
+
 .selected {
   border-bottom: 3px solid greenyellow;
-  color: greenyellow;
+  color: greenyellow !important;
 }
 .selected a {
   color: greenyellow;

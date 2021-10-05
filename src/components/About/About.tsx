@@ -1,15 +1,19 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { Waypoint } from 'react-waypoint';
 import './About.css'
 
 
-const About = () => {
+const About = (props: IScrollSpy) => {
+    const {setLocation} = props
     return (
-        <Row id="about">
+        <>
+        <Row id="about" className="pt-5">
           
 
             <Col xs={12}>
                 <div className="text-class p-2">
+        <Waypoint onEnter={() => setLocation("about")} />
                     
                     <h3 className="sub-title">About</h3>
 
@@ -62,6 +66,7 @@ const About = () => {
                 </div>
             </Col>
         </Row>
+       </>
     );
 }
 

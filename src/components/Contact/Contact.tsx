@@ -3,9 +3,10 @@ import { ChangeEvent } from 'react';
 import { Row, Spinner, Toast, Col } from 'react-bootstrap';
 import { useState } from 'react';
 import './Contact.css'
+import { Waypoint } from 'react-waypoint';
 
 
-const Contact = () => {
+const Contact = (props: IScrollSpy) => {
 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false)
@@ -31,11 +32,12 @@ const Contact = () => {
 
     }
 
+    const {setLocation} = props
 
     return (
-
-
+<>
         <Row id="contact">
+        <Waypoint onEnter={() => setLocation("contact")} />
             <h3 className="sub-title"> Contact </h3>
             <div className="d-flex contact-links justify-content-center">
                 <a className="text-decoration-none" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kaiwan-kadir">
@@ -123,6 +125,7 @@ const Contact = () => {
 
 
         </Row>
+        </>
     );
 }
 
