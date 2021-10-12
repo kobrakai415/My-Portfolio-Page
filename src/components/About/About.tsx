@@ -24,9 +24,12 @@ const About = (props: IScrollSpy) => {
                     <p>
                         I am a MERN full stack web developer. Prior to pursuing a career in web developemnet,
                         I was a finance manager at the UK government where I managed budgets of over £1bn,
-                        developed funding models, and administered million pound payments to local authorities.
+                        developed funding models, and administered million pound payments to local authorities. 
+                        Whilst I excelled in this enviornment I constantly felt like I was hitting the ceiling and needed
+                        something more challenging and rewarding on a day to day basis!
 
                     </p>
+                    <p></p>
                     <p> I am passionate about fitness, problem solving and developing compelling full stack web applications!</p>
 
 
